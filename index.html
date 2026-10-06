@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#102D78">
+<title>FLING — Not That Deep.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+<div class="age" id="ageGate">
+  <div class="age-card">
+    <div class="age-left">
+      <div class="logo">FLING</div>
+      <div class="age-num">18+</div>
+      <div class="eyebrow">GOOD PLANS OPTIONAL.</div>
+    </div>
+    <div class="age-right">
+      <div class="eyebrow">WELCOME TO FLING</div>
+      <h2>GOOD PLANS OPTIONAL.<br>GOOD DECISIONS REQUIRED.</h2>
+      <p>This website contains information about an alcoholic beverage. Please confirm that you are of legal drinking age in your country.</p>
+      <div class="age-actions"><button class="btn btn-primary" id="enterAge">I'M 18+ / ENTER</button><button class="exit" id="exitAge">EXIT</button></div>
+    </div>
+  </div>
+</div>
+
+<header class="site-nav">
+  <a class="logo" href="#top">FLING</a>
+  <nav class="nav-links">
+    <a href="#beer">Beer</a><a href="#attitude">Vibe</a><a href="#lab">3D Can</a><a href="#merch">Merch</a><a href="#contact">Contact</a>
+  </nav>
+  <a class="nav-cta" href="#contact">Stay in loop</a>
+  <button class="menu" aria-label="Menu">☰</button>
+</header>
+
+<main id="top">
+  <section class="hero hero-animated">
+    <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+    <div class="hero-art">
+      <div class="sun-disc"></div><div class="wave-line"></div><div class="hero-can-shadow"></div>
+      <img src="assets/fling-lager.webp" alt="FLING Lager" class="hero-can">
+    </div>
+    <div class="hero-copy">
+      <div class="eyebrow reveal">Crisp. Cold. Colourful.</div>
+      <h1 class="reveal">Good plans.<span>Optional.</span></h1>
+      <p class="hero-sub reveal">A beach-coded beer for afternoons that accidentally become evenings. Same vibe. Different energy.</p>
+      <div class="actions reveal"><a class="btn btn-primary" href="#beer">Meet Fling</a><a class="btn btn-secondary" href="#lab">Rotate the can</a></div>
+    </div>
+    <div class="hero-note">Less overthinking · more moments</div>
+    <div class="hero-bottom"><span>01 — FLING / LAGER</span><span>Scroll to explore ↓</span></div>
+  </section>
+
+  <section class="section intro-strip magnetic-strip">
+    <div class="strip-word">FLING</div><div class="strip-copy">Beer for the plans you make five minutes before you leave.</div><div class="strip-dot"></div>
+  </section>
+
+  <section class="section beer-section" id="beer">
+    <div class="section-head reveal"><div><div class="kicker">Two moods. One Fling.</div><h2 class="display">Same vibe.<br>Different energy.</h2></div><p class="body">STRONG turns the volume up. LAGER keeps it easy. Pick your energy and let the plan figure itself out.</p></div>
+    <div class="products">
+      <article class="product-card strong reveal"><div class="product-label"><span>01 / Strong</span><span>5% alc · 300 ml</span></div><div class="sticker">Late<br>sunset<br>energy</div><img src="assets/fling-strong.webp" alt="FLING Strong can"><div class="product-copy"><h3>Bigger mood.</h3><p>Coral-led, bolder, made for the “one more song” part of the night.</p></div><span class="card-arrow">↗</span></article>
+      <article class="product-card lager reveal"><div class="product-label"><span>02 / Lager</span><span>5% alc · 300 ml</span></div><div class="sticker">Beach<br>day<br>coded</div><img src="assets/fling-lager.webp" alt="FLING Lager can"><div class="product-copy"><h3>Easy energy.</h3><p>Crisp, clean and bright — the cold-can-in-hand kind of afternoon.</p></div><span class="card-arrow">↗</span></article>
+    </div>
+  </section>
+
+  <section class="section section-coral manifesto" id="attitude">
+    <span class="doodle d1">☀</span><span class="doodle d2">〰</span><span class="doodle d3">•••</span><span class="doodle d4">✳</span>
+    <div class="manifesto-inner reveal"><div class="kicker">The Fling philosophy</div><h2 class="display">Not that <span>deep.</span></h2><p>Plans changed? Fine. Playlist weird? Better. Stay for sunset. Leave when the story gets good.</p><div class="manifesto-tags"><span>NO OVERTHINKING</span><span>JUST GOOD DAYS</span><span>18+ / DRINK RESPONSIBLY</span></div></div>
+  </section>
+
+  <section class="section section-dark universe" id="universe">
+    <div class="section-head reveal"><div><div class="kicker">The world around the can</div><h2 class="display">Welcome to<br>the Fling universe.</h2></div><p class="body">Beach chairs. Loud playlists. Last-minute drives. The little things that turn “nothing planned” into the best day.</p></div>
+    <div class="universe-grid">
+      <div class="u-card u-image reveal"><img src="assets/fling-lager.webp" alt="Fling can detail"><div class="u-inner"><span class="kicker">01 / beach mode</span><div class="u-title">Sun out.<br>Can cold.</div></div></div>
+      <div class="u-card reveal"><div class="u-inner"><span class="kicker">02 / music</span><div class="u-title">One more<br>song.</div><span class="u-mini">LOUD ENOUGH TO MATTER</span></div></div>
+      <div class="u-card reveal"><div class="u-inner"><span class="kicker">03 / plans</span><div class="u-title">Good plans<br>optional.</div><span class="u-mini">5 MINUTES NOTICE IS FINE</span></div></div>
+      <div class="u-card reveal"><div class="u-inner"><span class="kicker">04 / attitude</span><div class="u-title">Go with<br>the flow →</div><span class="u-mini">SAME VIBE / NEW STORY</span></div></div>
+    </div>
+  </section>
+
+  <section class="section canlab" id="lab">
+    <div class="lab">
+      <div class="lab-copy reveal">
+        <div class="kicker">Interactive can lab / live 3D</div>
+        <h2 class="display">Meet the<br><span class="lab-name">FLING LAGER</span></h2>
+        <p class="body lab-line">Crisp energy. Aqua top. Beach-day mood.</p>
+        <div class="lab-tabs"><button class="tab active" data-can="lager">Lager</button><button class="tab" data-can="strong">Strong</button></div>
+        <div class="lab-meta"><div class="meta"><b>5%</b>ABV</div><div class="meta"><b>300</b>ML</div><div class="meta"><b>360°</b>ROTATE</div></div>
+        <p class="lab-tip">Drag to rotate · scroll to zoom · the model pauses when offscreen</p>
+      </div>
+      <div class="lab-stage reveal">
+        <div class="model-glow"></div>
+        <div class="model-frame">
+          <model-viewer id="flingModel" src="assets/fling-can.glb" camera-controls auto-rotate auto-rotate-delay="900" rotation-per-second="18deg" interaction-prompt="none" shadow-intensity="1.1" exposure="1.08" camera-orbit="0deg 75deg 2.1m" field-of-view="30deg" aria-label="Interactive FLING 3D can"></model-viewer>
+          <div class="model-badge"><span>3D DEMO CAN</span><b>DRAG ↔</b></div>
+        </div>
+        <div class="model-caption"><span>GENERIC CAN MODEL / TEMPORARY</span><span>FLING ARTWORK APPLIED IN FINAL BUILD</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section merch" id="merch">
+    <div class="section-head reveal"><div><div class="kicker">The off-duty collection</div><h2 class="display">Wear the<br>vibe.</h2></div><p class="body">Oversized. Sun-faded. Ready for the beach, the road trip and the plan you definitely did not make.</p></div>
+    <div class="merch-grid">
+      <div class="merch-card big reveal"><div class="merch-visual"><div class="tee"></div><span class="merch-stamp">NOT<br>THAT<br>DEEP.</span></div><div class="merch-copy"><div class="kicker">01 / oversized tee</div><h3>Not that<br>deep.</h3></div></div>
+      <div class="merch-card reveal"><div class="merch-visual"><div class="cap"></div></div><div class="merch-copy"><div class="kicker">02 / cap</div><h3>Coral cap</h3></div></div>
+      <div class="merch-card reveal"><div class="merch-visual"><div class="tote"></div></div><div class="merch-copy"><div class="kicker">03 / tote</div><h3>Beach bag</h3></div></div>
+    </div>
+  </section>
+
+  <section class="section updates" id="contact">
+    <div class="update-box reveal"><div><div class="kicker">Launch updates</div><h2>Get the<br>drop.</h2><div class="update-doodles">✳　〰　☀</div></div><form class="form" onsubmit="event.preventDefault();this.querySelector('button').textContent='YOU’RE IN ✓';"><p class="body">New drops, pop-ups, merch and the occasional very good plan.</p><label class="field"><input required type="email" placeholder="Your email address"></label><label class="field"><input type="text" placeholder="Your city"></label><button class="btn btn-primary" type="submit">Stay in the loop →</button></form></div>
+  </section>
+</main>
+
+<footer class="footer"><div class="footer-top"><div><div class="kicker">FLING / NOT THAT DEEP.</div><div class="display">See you<br>outside.</div></div><div class="body">Good beer. Better days.<br><br><a href="#top">Back to top ↑</a></div></div><div class="footer-bottom"><span>© 2026 FLING</span><span>Drink responsibly · 18+</span><span>Built for good days</span></div></footer>
+<script src="app.js"></script>
+</body>
+</html>
